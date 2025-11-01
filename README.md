@@ -33,11 +33,11 @@ Color TO Binary (named like the JS function atob)
 Takes a provided file (or URL if `-w` or `--web` is passed), and decodes it into stdout.
 
 ```sh
-./ctoa -s 10 message.png > received.txt
+./ctob -s 10 message.png > received.txt
 ```
 
 ```sh
-./ctoa -ws 10 https://raw.githubusercontent.com/mesoscopic/color-ascii-code/master/example.png
+./ctob -ws 10 https://raw.githubusercontent.com/mesoscopic/color-ascii-code/master/example.png
 ```
 
 ### Options

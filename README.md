@@ -6,7 +6,25 @@ The encoder works by drawing square "blocks", left to right, top to bottom, each
 
 The decoder works by interpreting those blocks as UTF-8 text.
 
-## btoc
+## Build
+
+To build, ensure you have:
+- `git`
+- `cargo`, which comes with [Rust](https://rust-lang.org/)
+
+Examples will assume you use a Unix-like system, but the same options are available on Windows.
+
+```
+git clone https://github.com/mesoscopic/color-utf8-code.git
+cd color-utf8-code
+cargo build --release
+```
+
+The binaries will be put in `target/release`.
+
+The examples will assume you have not copied the binaries to a folder in PATH, but you can.
+
+## `btoc`
 
 Binary TO Color (named like the JS function btoa)
 
@@ -26,7 +44,7 @@ cat message.txt | ./btoc -s 10 message.png
 
 `-m` or `--message`: A string to use for the message instead of reading stdin.
 
-## ctob
+## `ctob`
 
 Color TO Binary (named like the JS function atob)
 
